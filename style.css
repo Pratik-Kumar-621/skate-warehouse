@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0 5%;
+    background-color: rgb(240, 240, 240);
+    transition: all 0.5s ease;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px auto 30px;
+    background-color: white;
+    margin-bottom: 60px;
+    transition: all 0.5s ease;
+}
+
+header .logo {
+    width: 200px;
+    color: white;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+header .logo .first-name {
+    padding: 9px 0;
+    background-color: orangered;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+header .logo .last-name {
+    padding: 5px 0;
+    background-color: rgb(50, 50, 50);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+header .nav {
+    margin-left: auto;
+    transition: all 0.5s ease;
+}
+
+header .nav .top-links {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    justify-content: end;
+}
+
+header .nav .top-links a {
+    margin-left: 36px;
+    font-size: 14px;
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+}
+
+header .nav .top-links a:hover {
+    color: orangered;
+}
+
+header .nav .top-links img {
+    width: 21px;
+    height: 21px;
+}
+
+header .nav .top-links .notify {
+    display: block;
+    height: 5px;
+    width: 5px;
+    background-color: orangered;
+    z-index: 1;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: -3px;
+    border-radius: 50%;
+}
+
+header .nav .bottom-links {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: rgb(39, 39, 39);
+}
+
+header .nav .bottom-links a {
+    margin-left: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+}
+
+header .nav .bottom-links a:hover {
+    color: orangered;
+}
+
+header .nav .bottom-links .search i {
+    margin-right: -23px;
+    position: relative;
+    z-index: 1;
+}
+
+header .nav .bottom-links .search input {
+    border: none;
+    width: 90px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    z-index: 0;
+    padding-left: 25px;
+}
+
+header .nav .bottom-links .search input:hover {
+    width: 140px;
+}
+
+header .divider {
+    margin-top: -3.6px;
+    grid-column: 1/-1;
+    background-color: orangered;
+    height: 3.6px;
+    width: 100%;
+    z-index: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 200px auto;
+    height: auto;
+}
+
+main aside {
+    display: grid;
+}
+
+aside .filter-components .filter-links {
+    padding: 4px 0 4px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(39, 39, 39);
+}
+
+aside .filter-components .filter-links .filter-category {
+    height: auto;
+    padding-left: 16px;
+}
+
+aside .filter-components .filter-links .filter-category:hover {
+    cursor: pointer;
+}
+
+aside .filter-components .filter-links .active {
+    border-left: 4px solid orangered;
+}
+
+aside .filter-components .filter-links .filter-sub-components {
+    margin: 12px 0 12px 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+aside .filter-components .filter-links .filter-sub-components .filter-sub-links {
+    padding: 2px;
+}
+
+aside .filter-components .filter-links .filter-sub-components .selected {
+    color: orangered;
+}
+
+aside .filter-components .filter-links .filter-sub-components .filter-sub-links:hover {
+    cursor: pointer;
+}
+
+aside .filter {
+    align-self: end;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: rgb(39, 39, 39);
+}
+
+aside .filter:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+main content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+}
+
+main content .skate-card {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+main content .skate-card .skate-image {
+    z-index: 1;
+}
+
+main content .skate-card .skate-image img {
+    height: 320px;
+}
+
+main content .skate-card .skate-contents {
+    background-color: #fff;
+    width: 240px;
+    height: 260px;
+    border-radius: 10px;
+    margin-left: -20px;
+    padding: 10px 20px 10px 36px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main content .skate-card .skate-contents .new {
+    background: #7c7cfd;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    width: 60px;
+    text-align: center;
+}
+
+main content .skate-card .skate-contents .name {
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 7px;
+    color: rgb(32, 31, 31);
+}
+
+main content .skate-card .skate-contents .size {
+    font-size: 14px;
+    line-height: 40px;
+    color: rgb(66, 64, 64);
+}
+
+main content .skate-card .skate-contents .price {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-top: 20px;
+    color: orangered;
+}
+
+@media all and (max-width: 960px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    main aside {
+        margin-bottom: 20px;
+    }
+    aside .filter-components {
+        display: flex;
+        justify-content: space-around;
+    }
+    aside .filter {
+        margin-bottom: 0;
+    }
+}
+
+@media all and (max-width: 750px) {
+    body {
+        margin: 0 2.5%;
+    }
+    header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 66px 3px;
+    }
+    header .logo {
+        display: flex;
+        width: 100%;
+    }
+    header .logo .first-name {
+        width: 50%;
+        padding: 0 20px;
+        font-size: 27px;
+    }
+    header .logo .last-name {
+        font-size: 18px;
+        width: 50%;
+    }
+    header .nav {
+        width: 100%;
+        margin-right: auto;
+    }
+    header .nav .top-links {
+        height: 36px;
+        justify-content: center;
+        align-items: center;
+    }
+    header .nav .bottom-links {
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    header .nav .bottom-links a {
+        margin-left: 0;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    header .nav .bottom-links .search {
+        margin-bottom: 3px;
+    }
+    header .nav .bottom-links .search i {
+        font-size: 12px;
+    }
+    header .nav .bottom-links .search input {
+        font-size: 14px;
+    }
+    header .divider {
+        margin-top: 0;
+    }
+    aside .filter-components .filter-links .filter-category {
+        font-size: 14px;
+    }
+    aside .filter-components .filter-links .filter-sub-components .filter-sub-links {
+        padding: 0px;
+        font-size: 10px;
+    }
+    aside .filter-components .filter-links .filter-sub-components {
+        margin: 3px 0 3px 12px;
+    }
+    aside .filter-components .filter-links .active {
+        border-left: 3px solid orangered;
+    }
+    aside .filter-components .filter-links .filter-category {
+        padding-left: 5px;
+    }
+    aside .filter {
+        font-size: 14px;
+        margin-top: 9px;
+    }
+}
